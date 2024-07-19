@@ -23,23 +23,27 @@ on:
         required: true
         default: v0.8.0
       cni_version:
-        description: 'the version of cni-plugins, leave empty for latest release'
+        description: 'the version of cni-plugins'
         required: false
         default: ""
       ovs_version:
-        description: 'the version of ovs-cni plugin, leave empty for latest release'
+        description: 'the version of ovs-cni plugin'
+        required: false
+        default: ""
+      sriov_version:
+        description: 'the version of sriov plugin'
         required: false
         default: ""
       rdma_version:
-        description: 'the version of rdma-cni plugin, leave empty for latest main code'
+        description: 'the version of rdma-cni plugin'
         required: false
         default: ""
       ibsriov_version:
-        description: 'the version of ib-sriov plugin, leave empty for latest release'
+        description: 'the version of ib-sriov plugin'
         required: false
         default: ""
       ipoib_version:
-        description: 'the version of ipoib plugin, leave empty for latest release'
+        description: 'the version of ipoib plugin'
         required: false
         default: ""
   push:

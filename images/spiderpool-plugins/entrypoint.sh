@@ -67,7 +67,7 @@ else
 fi
 
 if [ "$INSTALL_RDMA_PLUGIN" = "true" ]; then
-   VERSION=$(cat ${VERSION_FILE_PATH} | grep RDMA_COMMIT_HASH | awk '{print $2}')
+   VERSION=$(cat ${VERSION_FILE_PATH} | grep RDMA_VERSION | awk '{print $2}')
    echo "Installing RDMA-Plugin: ${VERSION}"
    rm -f ${COPY_DST_DIR}/rdma.old || true
    ( [ -f "${COPY_DST_DIR}/rdma" ] && mv ${COPY_DST_DIR}/rdma ${COPY_DST_DIR}/rdma.old ) || true
